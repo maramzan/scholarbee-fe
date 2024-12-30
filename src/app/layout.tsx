@@ -11,7 +11,11 @@ import 'react-phone-number-input/style.css';
 
 export const metadata: Metadata = {
   title: 'Scholarbee',
-  description: 'Shaping Future'
+  description: 'Shaping Future',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png'
+  }
 };
 
 interface RootLayoutProps {

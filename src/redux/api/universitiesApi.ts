@@ -20,7 +20,10 @@ interface UniversitiesResponse {
 
 export const universitiesApi = createApi({
   reducerPath: 'universitiesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://admin.scholarbee.pk/api/' }),
+  // baseQuery: fetchBaseQuery({ baseUrl: 'https://admin.scholarbee.pk/api/' }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'https://79dc-124-109-40-174.ngrok-free.app/api'
+  }),
   endpoints: (builder) => ({
     getUniversities: builder.query<
       UniversitiesResponse,

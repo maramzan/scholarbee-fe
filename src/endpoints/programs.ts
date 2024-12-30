@@ -12,7 +12,6 @@ export class ProgramsApi {
           }
         }
       );
-
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
